@@ -14,16 +14,29 @@ img {
     margin: auto;
     text-decoration: none;
 }
-
-.header {
-    background-image: url('images/Small-Islands-Header.jpg') ;  
-    background-size: cover;
-    height: 35vh;
-    background-position: center;
-    background-repeat: no-repeat;
-
+.top-section {
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
 
 }
+.top-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/Small-Islands-Header.jpg') ;  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(80%);
+    z-index: -1;
+
+}
+
 .logo {
     font-size: 2rem;
     font-family: "Playfair Display, serif";
@@ -59,6 +72,12 @@ nav {
 
 
 }
+.shopping-cart {
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: white;
+    border: transparent;
+}
 
 .links {
     text-decoration: none;
@@ -70,7 +89,7 @@ nav {
 
 }
 .second-header {
-    margin-top: 10rem;
+    margin-top: 3rem;
     text-align: center;
     letter-spacing: 1px;
     margin-bottom: 5rem;
@@ -113,6 +132,11 @@ nav {
     background-color: aqua;
     
 }
+
+.newsletter, .newsletter-header{
+
+    color: white;
+}
 @media (max-width: 768px) {
     .container {
         height: 100%;
@@ -123,6 +147,10 @@ nav {
     }
     nav {
         display: block;
+    }
+    .shopping-cart{
+        font-size: 1rem;
+
     }
     .links {
         padding: .7rem;
@@ -141,6 +169,7 @@ nav {
     .second-header {
         text-align: center;
         margin-bottom: 1rem;
+        margin-top: 4rem;
     }
     .video {
         text-align: center;
@@ -188,10 +217,13 @@ nav {
         font-size: 1.5rem;
         padding: .7rem;
         margin-bottom: 2rem;
+        color: white;
+        
     }
     .form-header {
         text-align: center;
         margin-bottom: 2rem;
+        color: white;
     }
     form {
 
@@ -237,7 +269,7 @@ nav {
     .second-header {
         text-align: center;
         margin-bottom: 1rem;
-        margin-top: 7rem;
+        margin-top: 2rem;
     }
     .top-text {
 
@@ -296,7 +328,6 @@ nav {
             justify-content: space-between;
             align-items: center;
             padding: 3rem 5rem;
-            background-color: #f4f4f4;
             border-radius: 10px;
         }
     
@@ -305,7 +336,7 @@ nav {
             font-size: 2.5rem;
             text-align: left;
             margin-right: 2rem;
-            color: #333;
+            
         }
     
         .form {
@@ -388,6 +419,10 @@ nav {
         text-align: center;
         margin: 3rem;
     }
+    .videos-list {
+
+        display: flex;
+    }
 
     video{
         width: 95%;
@@ -400,8 +435,8 @@ nav {
     }
     .first-title {
         position: absolute;
-        left: 80%;
-        top: 80%;
+        left: 70%;
+        top: 75%;
         color: orangered;
         font-weight: bold;
     }
@@ -410,8 +445,8 @@ nav {
     }
     .second-title {
         position: absolute;
-        left: 80%;
-        top: 80%;
+        left: 70%;
+        top: 75%;
         color: orangered;
         font-weight: bold;
     }
@@ -422,7 +457,6 @@ nav {
         justify-content: space-between;
         align-items: center;
         padding: 3rem 5rem;
-        background-color: #f4f4f4;
         border-radius: 10px;
     }
 
@@ -431,7 +465,7 @@ nav {
         font-size: 2.5rem;
         text-align: left;
         margin-right: 2rem;
-        color: #333;
+        
     }
 
     .form {
