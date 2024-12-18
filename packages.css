@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+
+}
+.container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-decoration: none;
+}
+
+.top-section {
+    position: relative;
+    overflow: hidden;
+    height: 35vh;
+    z-index: 2;
+
+}
+.top-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/Small-Islands-Header.jpg') ;  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(80%);
+    z-index: -1;
+
+}
+
+.logo {
+    font-size: 2rem;
+    font-family: "Playfair Display, serif";
+}
+
+nav {
+    display: flex;
+    text-transform: uppercase;
+    color: orangered;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+    justify-content: space-between;
+    padding: 1rem;
+
+
+}
+.shopping-cart {
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: white;
+    border: transparent;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-weight: bold;  
+
+}
+.packages {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+
+}
+.card-header{
+  text-align: center;
+  padding: 1rem;
+  color: blueblack;
+
+}
+.card-text {
+ color: grey;
+ text-align: center;
+ padding-bottom: 1rem;
+
+}
