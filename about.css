@@ -199,18 +199,18 @@ nav {
 }
 
 .question h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .answer {
     max-height: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .answer p {
     padding-top: 1rem;
     line-height: 1.6;
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
 
 .faq-card.active .answer {
