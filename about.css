@@ -65,13 +65,13 @@ nav {
 .shopping-cart {
     font-size: 1.5rem;
     background-color: transparent;
-    color: black;
+    color: white;
     border: transparent;
 }
 
 .links {
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 1rem;
     font-weight: bold;  
 
@@ -216,4 +216,11 @@ nav {
 .faq-card.active .answer {
     max-height: 300px;
 
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: gray;
 }
