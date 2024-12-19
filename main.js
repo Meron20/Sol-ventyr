@@ -1,24 +1,105 @@
 const productList = [{
     productId: 1,
-    title: 'Maldives',
-    description: 'The Maldives is the smallest country in Asia.',
-    imageUrl: 'https://en.wikipedia.org/wiki/Maldives#/media/File:Bathala_(Maldives)_8.JPG',
-    price: 15000,
-    currency: 'KR'
+    title: 'Maldives Family Package',
+    description: '',
+    hotel: '3 Star Hotel - Breakfast, Lunch & Dinner',
+    flight: 'Return speedboat',
+    date: '3 Nights / 4 Days',
+    imageUrl: 'images/Family Package.jpeg',
+    price:  '$2,700',
 }, {
     productId: 2,
-    title: 'Paris',
-    description: 'Paris is the capital and largest city of France.',
-    imageUrl: 'https://en.wikipedia.org/wiki/Paris#/media/File:La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_ao%C3%BBt_2014_(2).jpg',
-    price: 5000,
-    currency: 'KR'
+    title: 'Stayhere Paris - Couple Package',
+    description: '',
+    hotel: '4 stars / 4-course dinner',
+    flight: 'ARN - GDN ',
+    date: 'Tue, Dec 24 - Fri, Jan 3',
+    imageUrl: 'images/paris package 2.jpg',
+    price:  ' $1,263',
+}, {
+    productId: 3,
+    title: 'James Bond Island Day Trip with Sea Canoeing',
+    description: '',
+    hotel: 'A guided tour ',
+    flight: 'ARN - HKT',
+    date: 'Sun, Feb 24 - Fri, Mar 3',
+    imageUrl: 'images/bkk package.jpg',
+    price:  ' $3,600', 
+}, {
+    productId: 4,
+    title: 'Mountain Adventure Trek / Special offer',
+    description: '',
+    hotel: 'Experience the thrill of hiking.',
+    flight: 'ARN - TAZ',
+    date: 'Tue, Jan 6- Fri, Jan 23',
+    imageUrl: 'images/images mountain group.jpeg',
+    price:  '$2,900', 
 }]
+
+const renderList = (itemType, itemList) => {
+    const productListHtml = document.getElementById(itemType)
+    itemList.forEach((item) => {
+        const itemHtml = document.createElement('div')
+        itemHtml.classList.add('destination')
+
+        const image = document.createElement('img')
+        image.classList.add('img')
+        image.src = item.imageUrl
+
+        const textContent = document.createElement('div')
+
+        const title = document.createElement('div')
+        title.innerHTML = item.title
+        title.classList.add('paris')
+
+        const hotelIcon = document.createElement('i')
+        hotelIcon.classList.add('fas', 'fa-home')
+        const hotel = document.createElement('p')
+        hotel.innerHTML = item.hotel
+        hotel.classList.add('hotel', 'para')
+        hotel.append(hotelIcon)
+        
+        const flight = document.createElement('p')
+        flight.innerHTML = item.flight
+        flight.classList.add('flight', 'para')
+
+        const date = document.createElement('p')
+        date.innerHTML = item.date 
+        date.classList.add('date', 'para')
+
+        const price = document.createElement('h3')
+        price.innerHTML = item.price
+        price.classList.add('price', 'para')
+
+        textContent.append(title)
+        textContent.append(hotel)
+        itemHtml.append(image)
+        itemHtml.append(textContent)
+        textContent.append(flight)
+        textContent.append(date)
+        textContent.append(price)
+
+        if (itemType === 'product-list') {
+            const addToCartButton = document.createElement('button')
+            addToCartButton.classList.add('cart-button')
+            addToCartButton.innerHTML = 'Add to cart'
+            addToCartButton.addEventListener('click', () => {
+                addToCart(getProductById(item.productId))
+                document.getElementById('cart-total').innerHTML = getTotalCartItems()
+                alert('Added to cart')
+            }) 
+            itemHtml.append(addToCartButton)
+        }
+
+        productListHtml.append(itemHtml)
+    })     
+
+}
 
 const getProductById = (productId) => productList.find((item) => item.productId === productId)
 
 const addToCart = (productItem) => {
     let cartItems = JSON.parse(window.localStorage.getItem('cartItems'))
-    console.log(cartItems)
     if (!cartItems) {
         cartItems = []     
     } 
@@ -35,8 +116,15 @@ const getTotalCartItems = () => {
     return cartItems.length  
 }
 
-const productItem2 = getProductById(2)
-const productItem1 = getProductById(1)
+const getCartItems = () => {
+    return JSON.parse(window.localStorage.getItem('cartItems'))
+}
 
-addToCart(productItem1)
-addToCart(productItem2)
+
+// const productItem2 = getProductById(2)
+// const productItem1 = getProductById(1)
+
+// addToCart(productItem1)
+// addToCart(productItem2)
+
+  

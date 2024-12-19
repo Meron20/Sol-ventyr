@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="packages.css">
     <script src="main.js"></script>
     <script src="packages.js"></script>
-    <script src="cart.js"></script>
 
 </head>
 <body>
@@ -22,7 +21,7 @@
                              <a class="links" href="packages.html">Packages</a>
                              <a class="links" href="about.html">About</a>
                              <a class="links" href="contact.html">Contact</a>    
-                             <a class="shopping-cart" href="cart.html"><i class="fas fa-cart-plus"></i></a>
+                             <a class="shopping-cart" href="cart.html"><i class="fas fa-cart-plus"></i><span id="cart-total"></span></a>
                      </div>
                  </nav>
                  <h1 class="packages">Explore vacation packages to popular destinations</h1>
@@ -32,53 +31,9 @@
 
         <div class="main">
             <section class="one">
-                <h1 class="card-header">Book Your Tour Packages Now!</h1>
-                <p class="card-text">Tour packages</p>
-                <div class="image-content">
-                    <div class="destination">
-                        <img class="img" src="images/Family Package.jpeg" alt="Maldives">
-                        <div class="text-content">
-                            <h3 class="maldives">Maldives Family Package </h3>
-                            <p class="hotel para"><i class="fas fa-home"></i> 3 Star/Breakfast, Lunch & Dinner</p>
-                            <p class="flight para"><i class="fas fa-plane"></i> Return speedboat </p>
-                            <p class="date para"> <i class="fas fa-calendar"></i> 3 Nights / 4 Days </p>
-                            <h3 class="price para" > $2,700</h3>
-                            <button class="btn">Book Now</button>
-                        </div>
-                    </div>
-                    <div class="destination">
-                        <img class="img" src="images/paris package 2.jpg" alt="Paris">
-                        <div class="text-content">
-                            <h3 class="paris">Stayhere Paris - Couple Package </h3>
-                            <p class="hotel para"><i class="fas fa-home"></i> 4 stars / 4-course dinner </p>
-                            <p class="flight para"><i class="fas fa-plane"></i> ARN - GDN </p>
-                            <p class="date para"> <i class="fas fa-calendar"></i> Tue,Dec 24 - Fri, Jan 3</p>
-                            <h3 class="price para"> $1,263</h3>
-                            <button class="btn">Book Now</button>
-                        </div>  
-                    </div>
-                    <div class="destination">
-                        <img class="img" src="images/bkk package.jpg" alt="Phuket">
-                        <div class="text-content">
-                            <h3 class="phuket">James Bond Island Day Trip with Sea Canoeing</h3>
-                            <p class="hotel para"><i class="fas fa-home"></i> A guided tour . </p>
-                            <p class="flight para"><i class="fas fa-plane"></i> ARN - HKT </p>
-                            <p class="date para"> <i class="fas fa-calendar"></i> Sun, Feb 24 - Fri, Mar 3</p>
-                            <h3 class="price para"> $3,600</h3>
-                            <button class="btn">Book Now</button>
-                        </div>
-                    </div>
-                    <div class="destination">
-                        <img class="img" src="images/images mountain group.jpeg" alt="Safari">
-                        <div class="text-content">
-                            <h3 class="safari">Mountain Adventure Trek / Special offer </h3>
-                            <p class="hotel para"><i class="fas fa-home"></i> Experience the thrill of hiking. </p>
-                            <p class="flight para"><i class="fas fa-plane"></i> ARN - TAZ </p>
-                            <p class="date para"><i class="fas fa-calendar"></i>  Tue, Jan 6- Fri, Jan 23</p>
-                            <h3 class="price para"> $2,900</h3>
-                            <button class="btn">Book Now</button>
-                        </div>
-                    </div>
+                <h1 class="packages-heading">Order your tour packages now!</h1>
+                <div class="image-content" id="product-list">
+                    
                 </div>
             </section> 
             <section class="two">

@@ -12,25 +12,31 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="logo">
-                <h1>Sol & Äventyr</h1>
-            </div>
-            <nav>
-                <div class="nav-bar">
-                        <a class="links" href="index.html">Home</a></li>
-                        <a class="links" href="packages.html">Packages</a></li>
-                        <a class="links" href="about.html">About</a></li>
-                        <a class="links" href="contact.html">Contact</a></li> 
-                        <a href=""><i class="fas fa-cart-plus"></i><span id="cart-total"></span></a>
+        <header class ="header">
+            <div class="top-section">
+                 <nav>
+                     <h1 class="logo">Sol & Äventyr</h1>
+                     <div class="nav-bar">
+                        <a class="links" href="index.html">Home</a>
+                        <a class="links" href="packages.html">Packages</a>
+                        <a class="links" href="about.html">About</a>
+                        <a class="links" href="contact.html">Contact</a>    
+                        <a class="shopping-cart" href="cart.html"><i class="fas fa-cart-plus"></i><span id="cart-total"></span></a>
                 </div>
-            </nav>
+                 </nav>
+                 <h1 class="packages">Explore vacation packages to popular destinations</h1>
+                 <p class="top-para">Choose from a variety of Organized Adventures</p>
+            </section>  
         </header>
-        <div class="main">
-            <button id="empty-cart">Empty cart</button>
-            <div id="cart-list"></div>
-        </div>
 
+        <div class="main">
+            <section class="one">
+                <h1 class="packages">Shopping Cart</h1>
+                <button id="empty-cart">Empty cart</button>
+                <div class="image-content" id="cart-list">
+                    
+                </div>
+            </section> 
             <footer>
                 <p class="text">© 2024 Sol & Ävenytyr. All Rights Reserved. 2005 - 2024</p>
             </footer>

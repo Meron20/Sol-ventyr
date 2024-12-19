@@ -96,7 +96,11 @@ nav {
     color: white;
     text-align: center;
     margin-top: 2rem;
+}
 
+.packages-heading {
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .card-header{
