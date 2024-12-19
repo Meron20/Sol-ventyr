@@ -482,6 +482,13 @@ footer {
         font-size: 1.5rem;
         color: gray;
     }
+}
 
+.fas.icon {
+    margin-right: 5px;
+}
 
+.package-title {
+    margin-top: 10px;
+    font-weight: bold;
 }

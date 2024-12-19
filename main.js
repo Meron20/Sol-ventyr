@@ -50,21 +50,27 @@ const renderList = (itemType, itemList) => {
 
         const title = document.createElement('div')
         title.innerHTML = item.title
-        title.classList.add('paris')
+        title.classList.add('package-title')
 
         const hotelIcon = document.createElement('i')
-        hotelIcon.classList.add('fas', 'fa-home')
+        hotelIcon.classList.add('fas', 'fa-home', 'icon')
         const hotel = document.createElement('p')
-        hotel.innerHTML = item.hotel
-        hotel.classList.add('hotel', 'para')
         hotel.append(hotelIcon)
+        hotel.append(item.hotel)
+        hotel.classList.add('hotel', 'para')
         
+        const flightIcon = document.createElement('i')
+        flightIcon.classList.add('fas', 'fa-plane', 'icon')
         const flight = document.createElement('p')
-        flight.innerHTML = item.flight
+        flight.append(flightIcon)
+        flight.append(item.flight)
         flight.classList.add('flight', 'para')
 
+        const dateIcon = document.createElement('i')
+        dateIcon.classList.add('fas', 'fa-calendar', 'icon')
         const date = document.createElement('p')
-        date.innerHTML = item.date 
+        date.append(dateIcon)
+        date.append(item.date)
         date.classList.add('date', 'para')
 
         const price = document.createElement('h3')
