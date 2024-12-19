@@ -2,11 +2,14 @@ const renderPackages = () => {
     const productListHtml = document.getElementById('product-list')
     productList.forEach((item) => {
         const itemHtml = document.createElement('div')
-        itemHtml.classList.add('item')
+        itemHtml.classList.add('destination')
 
         const image = document.createElement('img')
-        image.classList.add('picture')
+        image.classList.add('img')
         image.src = item.imageUrl
+
+        const textContent = document.createElement('div')
+
 
         const title = document.createElement('div')
         title.innerHTML = item.title
@@ -16,21 +19,21 @@ const renderPackages = () => {
         hotelIcon.classList.add('fas', 'fa-home')
         const hotel = document.createElement('p')
         hotel.innerHTML = item.hotel
-        hotel.classList.add('hotel-info')
+        hotel.classList.add('hotel', 'para')
         hotel.append(hotelIcon)
         
 
         const flight = document.createElement('p')
         flight.innerHTML = item.flight
-        flight.classList.add('flight.info')
+        flight.classList.add('flight', 'para')
 
         const date = document.createElement('p')
         date.innerHTML = item.date 
-        date.classList.add('date-info')
+        date.classList.add('date', 'para')
 
         const price = document.createElement('h3')
         price.innerHTML = item.price
-        price.classList.add('price-info')
+        price.classList.add('price', 'para')
 
 
 
@@ -44,13 +47,15 @@ const renderPackages = () => {
 
         }) 
 
+        textContent.append(title)
+        textContent.append(hotel)
         itemHtml.append(image)
-        itemHtml.append(title)
-        itemHtml.append(hotel)
-        itemHtml.append(flight)
-        itemHtml.append(price)
+
+        textContent.append(flight)
+        textContent.append(price)
         itemHtml.append(addToCartButton)
         productListHtml.append(itemHtml)
+        itemHtml.append(textContent)
     })     
 
 }
