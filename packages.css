@@ -11,7 +11,7 @@
     --secondary-color: #86a1db;
     --color: rgb(107, 202, 188);
     
-    --background:rgb(147, 14, 14);
+    --logo:orangered;
 }
 img {
     width: 100%;
@@ -55,7 +55,7 @@ img {
 nav {
     display: flex;
     text-transform: uppercase;
-    color: var(--background);
+    color: var(--logo);
     font-weight: bold;
     align-items: center;
     text-align: center;
@@ -77,6 +77,12 @@ nav {
     color: black;
     padding: 1rem;
     font-weight: bold;  
+    color: white;
+
+}
+.shopping-cart{
+     
+    color: white;
 
 }
 .top-para {
