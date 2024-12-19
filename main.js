@@ -86,7 +86,8 @@ const renderList = (itemType, itemList) => {
             addToCartButton.addEventListener('click', () => {
                 console.log('hello', item.productId)
                 addToCart(getProductById(item.productId))
-                // document.getElementById('cart-total').innerHTML = getTotalCartItems()
+                document.getElementById('cart-total').innerHTML = getTotalCartItems()
+                alert('Added to cart')
             }) 
             itemHtml.append(addToCartButton)
         }
