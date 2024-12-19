@@ -1,49 +1,24 @@
 const productList = [{
     productId: 1,
-    title: 'Maldives Family Package',
-    description: '',
-    hotel: '3 Star Hotel - Breakfast, Lunch & Dinner',
-    flight: 'Return speedboat Airport Pick up & Drop Transfers',
-    date: '3 Nights / 4 Days',
-    imageUrl: 'images/Family Package.jpeg',
-    price:  '$2,700',
+    title: 'Maldives',
+    description: 'The Maldives is the smallest country in Asia.',
+    imageUrl: 'https://en.wikipedia.org/wiki/Maldives#/media/File:Bathala_(Maldives)_8.JPG',
+    price: 15000,
+    currency: 'KR'
 }, {
     productId: 2,
-    title: 'Stay here Paris - Couple Package / Maarif -Elite Hotel + Flight',
-    description: 'Evening cruise time leaves the day free for other must-do activities',
-    hotel: '4 stars / 4-course dinner',
-    flight: 'ARN - GDN ',
-    date: 'Tue, Dec 24 - Fri, Jan 3',
-    imageUrl: 'images/paris package 2.jpg',
-    price:  ' $1,263',
-}, {
-    productId: 3,
-    title: 'James Bond Island Day Trip with Sea Canoeing',
-    description: 'A guided tour to the highlights of Phang Nga Bay including mangroves and sea canoeing',
-    hotel: '4 stars / 4-course dinner',
-    flight: 'ARN - HKT',
-    date: 'Sun, Feb 24 - Fri, Mar 3',
-    imageUrl: 'images/bkk package.jpg',
-    price:  ' $3,600', 
-}, {
-    productId: 4,
-    title: 'James Bond Island Day Trip with Sea Canoeing',
-    description: 'A guided tour to the highlights of Phang Nga Bay including mangroves and sea canoeing',
-    hotel: '4 stars / 4-course dinner',
-    flight: 'ARN - TAZ',
-    date: 'Tue, Jan 6- Fri, Jan 23',
-    imageUrl: 'images/hiking.webp',
-    price:  '$2,900', 
+    title: 'Paris',
+    description: 'Paris is the capital and largest city of France.',
+    imageUrl: 'https://en.wikipedia.org/wiki/Paris#/media/File:La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques,_Paris_ao%C3%BBt_2014_(2).jpg',
+    price: 5000,
+    currency: 'KR'
 }]
-
-
-
-
 
 const getProductById = (productId) => productList.find((item) => item.productId === productId)
 
 const addToCart = (productItem) => {
     let cartItems = JSON.parse(window.localStorage.getItem('cartItems'))
+    console.log(cartItems)
     if (!cartItems) {
         cartItems = []     
     } 
@@ -60,15 +35,8 @@ const getTotalCartItems = () => {
     return cartItems.length  
 }
 
-const getCartItems = () => {
-    return JSON.parse(window.localStorage.getItem('cartItems'))
-}
+const productItem2 = getProductById(2)
+const productItem1 = getProductById(1)
 
-
-// const productItem2 = getProductById(2)
-// const productItem1 = getProductById(1)
-
-// addToCart(productItem1)
-// addToCart(productItem2)
-
-  
+addToCart(productItem1)
+addToCart(productItem2)

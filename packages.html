@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="packages.css">
     <script src="main.js"></script>
     <script src="packages.js"></script>
+    <script src="cart.js"></script>
 
 </head>
 <body>
@@ -21,18 +22,18 @@
                              <a class="links" href="packages.html">Packages</a>
                              <a class="links" href="about.html">About</a>
                              <a class="links" href="contact.html">Contact</a>    
-                             <button class="shopping-cart"><i class="fas fa-cart-plus"></i></button>
+                             <a href="cart.html"><i class="fas fa-cart-plus"></i></a>
                      </div>
                  </nav>
                  <h1 class="packages">Explore vacation packages to popular destinations</h1>
                  <p class="top-para">Choose from a variety of Organized Adventures</p>
             </section>  
         </header>
+
         <div class="main">
-            <div id="product-list"></div>
             <section class="one">
                 <h1 class="packages">Explore vacation packages to popular destinations</h1>
-                <div class="image-content">
+                <div class="image-content" id="product-list">
                     <div class="destination">
                         <img class="img" src="images/Family Package.jpeg" alt="Maldives">
                         <div class="text-content">
