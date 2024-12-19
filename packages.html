@@ -12,71 +12,80 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="logo">
-                <h1>Sol & Äventyr</h1>
-            </div>
-            <nav>
-                <div class="nav-bar">
-                        <a class="links" href="index.html">Home</a></li>
-                        <a class="links" href="packages.html">Packages</a></li>
-                        <a class="links" href="about.html">About</a></li>
-                        <a class="links" href="contact.html">Contact</a></li> 
-                        <a href="cart.html"><i class="fas fa-cart-plus"></i><span id="cart-total"></span></a>
-                </div>
-            </nav>
+        <header class ="header">
+            <div class="top-section">
+                 <nav>
+                     <h1 class="logo">Sol & Äventyr</h1>
+                     <div class="nav-bar">
+                             <a class="links" href="index.html">Home</a>
+                             <a class="links" href="packages.html">Packages</a>
+                             <a class="links" href="about.html">About</a>
+                             <a class="links" href="contact.html">Contact</a>    
+                             <button class="shopping-cart"><i class="fas fa-cart-plus"></i></button>
+                     </div>
+                 </nav>
+                 <h1 class="packages">Explore vacation packages to popular destinations</h1>
+                 <p class="top-para">Choose from a variety of Organized Adventures</p>
+            </section>  
         </header>
         <div class="main">
             <div id="product-list"></div>
             <section class="one">
                 <h1 class="packages">Explore vacation packages to popular destinations</h1>
                 <div class="image-content">
-                    <div class="first-destination">
-                        <img class="first-img" src="images/Family Package.jpeg" alt="Paris">
-                        <h3 class="paris">Maldives Family Package </h3>
-                        <p class="hotel"><i class="fas fa-home"></i> 3 Star Hotel - Breakfast, Lunch & Dinner</p>
-                        <p class="flight"><i class="fas fa-plane"></i> Return speedboat Airport Pick up & Drop Transfers </p>
-                        <p class="date"> <i class="fas fa-calendar"></i> 3 Nights / 4 Days </p>
-                        <h3 class="price"> $2,700</h3>
-                        <button class="btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    <div class="destination">
+                        <img class="img" src="images/Family Package.jpeg" alt="Maldives">
+                        <div class="text-content">
+                            <h3 class="maldives">Maldives Family Package </h3>
+                            <p class="hotel para"><i class="fas fa-home"></i> 3 Star/Breakfast, Lunch & Dinner</p>
+                            <p class="flight para"><i class="fas fa-plane"></i> Return speedboat </p>
+                            <p class="date para"> <i class="fas fa-calendar"></i> 3 Nights / 4 Days </p>
+                            <h3 class="price para" > $2,700</h3>
+                            <button class="btn">Book Now</button>
+                        </div>
                     </div>
-                    <div class="second-destination">
-                        <img class="second-img" src="images/paris package 2.jpg" alt="Paris">
-                        <h3 class="paris">Stayhere Paris - Couple Package / Maarif -Elite Hotel + Flight</h3>
-                        <p class="activity">Evening cruise time leaves the day free for other must-do activities</p>
-                        <p class="hotel"><i class="fas fa-home"></i> 4 stars / 4-course dinner </p>
-                        <p class="flight"><i class="fas fa-plane"></i> ARN - GDN </p>
-                        <p class="date"> <i class="fas fa-calendar"></i> Tue, Dec 24 - Fri, Jan 3</p>
-                        <h3 class="price"> $1,263</h3>
-                        <button class="btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    <div class="destination">
+                        <img class="img" src="images/paris package 2.jpg" alt="Paris">
+                        <div class="text-content">
+                            <h3 class="paris">Stayhere Paris - Couple Package </h3>
+                            <p class="hotel para"><i class="fas fa-home"></i> 4 stars / 4-course dinner </p>
+                            <p class="flight para"><i class="fas fa-plane"></i> ARN - GDN </p>
+                            <p class="date para"> <i class="fas fa-calendar"></i> Tue,Dec 24 - Fri, Jan 3</p>
+                            <h3 class="price para"> $1,263</h3>
+                            <button class="btn">Book Now</button>
+                        </div>  
                     </div>
-                    <div class="third-destination">
-                        <img class="third-img" src="images/bkk package.jpg" alt="Phuket">
-                        <h3 class="phuket">James Bond Island Day Trip with Sea Canoeing</h3>
-                        <p class="hotel"><i class="fas fa-home"></i> A guided tour to the highlights of Phang Nga Bay including mangroves and sea canoeing </p>
-                        <p class="flight"><i class="fas fa-plane"></i> ARN - HKT </p>
-                        <p class="date"> <i class="fas fa-calendar"></i> Sun, Feb 24 - Fri, Mar 3</p>
-                        <h3 class="price"> $3,600</h3>
-                        <button class="btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    <div class="destination">
+                        <img class="img" src="images/bkk package.jpg" alt="Phuket">
+                        <div class="text-content">
+                            <h3 class="phuket">James Bond Island Day Trip with Sea Canoeing</h3>
+                            <p class="hotel para"><i class="fas fa-home"></i> A guided tour . </p>
+                            <p class="flight para"><i class="fas fa-plane"></i> ARN - HKT </p>
+                            <p class="date para"> <i class="fas fa-calendar"></i> Sun, Feb 24 - Fri, Mar 3</p>
+                            <h3 class="price para"> $3,600</h3>
+                            <button class="btn">Book Now</button>
+                        </div>
                     </div>
-                    <div class="fourth-destination">
-                        <img class="fourth-img" src="images/hiking.webp" alt="Safari">
-                        <h3 class="safari">Mountain Adventure Trek / Special offer </h3>
-                        <p class="hotel"><i class="fas fa-home"></i>Experience the thrill of hiking through breathtaking trails with expert guides and cozy accommodations.</p>
-                        <p class="flight"><i class="fas fa-plane"></i> ARN - TAZ </p>
-                        <p class="date"><i class="fas fa-calendar"></i>Tue, Jan 6- Fri, Jan 23</p>
-                        <h3 class="price">$2,900</h3>
-                        <button class="btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                    <div class="destination">
+                        <img class="img" src="images/images mountain group.jpeg" alt="Safari">
+                        <div class="text-content">
+                            <h3 class="safari">Mountain Adventure Trek / Special offer </h3>
+                            <p class="hotel para"><i class="fas fa-home"></i> Experience the thrill of hiking. </p>
+                            <p class="flight para"><i class="fas fa-plane"></i> ARN - TAZ </p>
+                            <p class="date para"><i class="fas fa-calendar"></i>  Tue, Jan 6- Fri, Jan 23</p>
+                            <h3 class="price para"> $2,900</h3>
+                            <button class="btn">Book Now</button>
+                        </div>
                     </div>
                 </div>
             </section> 
             <section class="two">
                 <div class="special-offer">
-                    <h1 class="offer">Special Offers</h1>
+                    <h1 class="offer"> Travel more, spend less. </h1>
+                    <p class="offer-text">Special Offers.</p>
                     <img class="images" src="images/1140-smartguide-solotravel-promo.jpg" alt="Special offer">
                     <h1 class="discount"> Get upto 60% discount by joining us before summer</h1>
-                    <p class="offer-text">special Offers</p>
-                    <button class="btn">Join us</button>
+                    <h4 class="bottom-text">Special Offers</h4>
                 </div>
 
             </section>

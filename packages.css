@@ -71,12 +71,20 @@ nav {
     font-weight: bold;  
 
 }
+.top-para {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    color: white;
+    
+}
 .packages {
     color: white;
     text-align: center;
     margin-top: 2rem;
 
 }
+
 .card-header{
   text-align: center;
   padding: 1rem;
@@ -89,11 +97,373 @@ nav {
  padding-bottom: 1rem;
 
 }
+.destination {
+    margin-inline: 1rem;
+    margin-block: 2rem;
+    border: 1px solid transparent;
+    border-radius: 36px;
+    background-color: rgb(243, 244, 241)
 
-.picture {
-    width: 90%;
+
+}
+.img {
+    border-radius: 36px;
+
+}
+.text-content {
+    font-size: 1rem;
+    margin: 1rem;
+  
+
+}
+.activity, .para {
+    padding: .7rem ;
+  
+}
+.para {
+    padding-block: 1rem;
+}
+.btn {
+
+   
+    padding: .7rem 1rem;
+    border-radius: 16px;
+    border: transparent;
+    background-color: aqua;
+    font-size: 1rem;
+    margin-block: 1rem;
+    
+}
+.maldives {
+    padding-block: 1rem;
+}
+.price {
+
+    font-size: 1.5rem;
 }
 
-.cart-button {
-    padding: 10px;
+.offer{
+
+    text-align: center;
+    margin-inline: 1rem;
+    padding: 1rem;
+}
+.offer-text{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+.special-offer {
+    position: relative;
+}
+.discount {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 7%;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+}
+.bottom-text {
+    position: absolute;
+    top: 75%;
+    left: 78%;
+    color: white;
+    font-size: 1.1rem;
+    border: 1px solid transparent;
+    background-color: rgb(19, 162, 72);
+    padding: .3rem .1rem;
+}
+.images {
+    padding-inline: .8rem;
+    border-radius: 6px;
+    filter:brightness(80%);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        height: 100%;
+    }
+    .logo{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    nav {
+        display: block;
+    }
+    .shopping-cart{
+        font-size: 1rem;
+
+    }
+    .links {
+        padding: .7rem;
+        font-size: .8rem;
+    }
+    .destination {
+        margin-inline: 1rem;
+        margin-block: 2rem;
+        border: 1px solid transparent;
+        border-radius: 36px;
+        padding: 1rem;
+    
+
+    }
+    .packages{
+        font-size: 1.6rem;
+
+    }
+
+    .top-para{
+         font-size: 1rem;
+    }
+    .img {
+        border-radius: 36px;
+
+    }
+    .text-content {
+        font-size: 1rem;
+        margin: 1rem;
+      
+
+    }
+    .activity, .para {
+        padding: .7rem ;
+      
+    }
+    .para {
+        padding-block: 1rem;
+    }
+    .btn {
+
+       
+        padding: .7rem 1rem;
+        border-radius: 16px;
+        border: transparent;
+        background-color: aqua;
+        font-size: 1rem;
+        margin-block: 1rem;
+        
+    }
+    .maldives {
+        padding-block: 1rem;
+    }
+    .price {
+
+        font-size: 1.5rem;
+    }
+
+    .offer{
+
+        text-align: center;
+        margin-inline: 1rem;
+        padding: 1rem;
+    }
+    .offer-text{
+        text-align: center;
+        margin-bottom: 1rem;
+        color: gray;
+    }
+    
+    .special-offer {
+        position: relative;
+    }
+    .discount {
+        position: absolute;
+        text-align: center;
+        top: 40%;
+        left: 7%;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 1.8rem;
+       
+    }
+    .bottom-text {
+        position: absolute;
+        top: 75%;
+        left: 80%;
+        color: white;
+        font-size: 1rem;
+        border: 1px solid transparent;
+        background-color: rgb(19, 162, 72);
+        padding: .3rem .1rem;
+    }
+    .images {
+        padding-inline: .8rem;
+        border-radius: 6px;
+    }
+
+
+}
+
+@media (max-width: 560px) {
+    .discount {
+        font-size: 1.2rem;
+    }
+    .bottom-text {
+        position: absolute;
+        top: 72%;
+        left: 73%;
+        padding: .1rem .1rem;
+        font-size: .9rem;
+
+
+
+    }
+    
+
+}    
+
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .image-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .4rem;
+        justify-content: space-between;
+   }
+   .destination{ 
+       
+        padding: .8rem;
+   }
+  
+   .img {
+       height: 150px;
+
+   }
+   .text-content .para {
+
+       color: rgb(52, 45, 45);
+
+   }
+
+   .special-offer {
+    position: relative;
+}
+.discount {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 7%;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.bottom-text {
+    position: absolute;
+    top: 80%;
+    left: 82%;
+    color: white;
+    font-size: 1.3rem;
+    border: 1px solid transparent;
+    background-color: rgb(19, 162, 72);
+    padding: .3rem .1rem;
+}
+.images {
+    padding-inline: .8rem;
+    border-radius: 6px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin: 2rem;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+
+
+
+
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .container{
+
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .top-section {
+        height: 60vh;
+    }
+    .packages {
+        margin-top: 7rem;
+    }
+    .image-content {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         gap: .4rem;
+         justify-content: space-between;
+    }
+    .destination {
+       
+        padding: .4rem;
+    }
+    .img {
+        height: 150px;
+
+    }
+    .text-content .para {
+
+        color: rgb(52, 45, 45);
+
+    }
+
+
+   .special-offer {
+    position: relative;
+}
+    .discount {
+        position: absolute;
+        text-align: center;
+        top: 40%;
+        left: 7%;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    .bottom-text {
+        position: absolute;
+        top: 80%;
+        left: 84%;
+        color: white;
+        font-size: 1.5rem;
+        border: 1px solid transparent;
+        background-color: rgb(19, 162, 72);
+        padding: .4rem .2rem;
+        font-size: 1.5rem;
+
+    }
+    .images {
+        padding-inline: .8rem;
+        border-radius: 6px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        margin: 2rem;
+        font-size: 1.5rem;
+        color: gray;
+    }
+
+
 }
