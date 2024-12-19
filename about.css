@@ -4,7 +4,15 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
+*:root {
+    --background-color: rgb(33, 28, 98);
+    --text-color: rgba(244, 237, 237, 0.973);
+    --primary-color: #ececee;
+    --secondary-color: #86a1db;
+    --color: rgb(107, 202, 188);
+    
+    --logo:rgb(147, 14, 14);
+}
 body {
     font-family: "Playfair Display, serif";
 }
@@ -30,14 +38,14 @@ img {
 .main-nav {
     display: flex;
     justify-content: space-between;
-    background-color: #63afae;
+    background-color:var(--secondary-color);
     text-transform: uppercase;
     padding: 1rem;
 }
 
 .logo a{
     font-size: 2rem;
-    color: 	#ff9c3e;
+    color: var(--logo);
 }
 
 .nav-menu a{
