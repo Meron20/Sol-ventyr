@@ -6,61 +6,93 @@
     <title>Sol & Äventyr</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="about.css">
-
+    <script src="accordion.js"></script> 
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <h1>Sol & Äventyr</h1>
-            </div>
-            <nav>
-                <div class="nav-bar">
-                        <a class="links" href="index.html">Home</a></li>
-                        <a class="links" href="packages.html">Packages</a></li>
-                        <a class="links" href="about.html">About</a></li>
-                        <a class="links" href="contact.html">Contact</a></li>   
-                </div>
-            </nav>
-        </header>
-        <div class="main">
-            <section>
-              <div class="about-part">
-                <h1 class="about-us">About Us</h1>
-                <p class="about-para">Sol & Äventyr AB was founded in 2005 in Stockholm and specializes in offering affordable and comfortable charter trips. With destinations in Europe, Asia and the Caribbean, the company focuses on creating simple and safe holiday experiences for families, couples and groups.</p>
-              </div>
-              <div>
-                 <h3 class="subtitle">Vision</h3>
-                 <p class="vison-text">To become the most valued charter travel company in Scandinavia.</p>
-                 <h3 class="subtitle">Mission</h3>
-                 <p class="mission-text"> - Travel guarantee for security.</p>
-                 <p class="mission-text"> - Customer support available around the clock.</p>
-                 <p class="mission-text"> - Inspiring and affordable travel experiences.</p>
-              </div>
-              <div class="faq-container">
-                    <h1 class="faq-header">Frequently Asked Questions</h1>
-
-                    <div class="content-container">
-                        <div class="question">How do travel agents get paid, and will it cost me extra?</div>
-                        <div class="answer">Great question! Travel agents are typically paid by the resorts, so we don't charge a service fee for our expertise. Many resorts follow price parity, meaning the cost is the same whether you book through us, directly with the resort, or via an online booking site.</div>
-                    </div>
-                    <div class="content-container">
-                        <div class="question">What booking services does your company offer?</div>
-                        <div class="answer">Finding the right flight online can be pretty challenging, all those airport codes, stopovers, and layovers. Let our flight specialists help you. We have access to some very affordable prices and can book the perfect connection that best suits your trip. Please call or live chat us and our sales team will be happy to assist with booking your flights.</div>
-                    </div>
-                    <div class="content-container">
-                        <div class="question">Do I nedd travel insurance?</div>
-                        <div class="answer">Yes. We highly recommend travel protection, it's important to protect your trip investment and loved ones. We will offer you the best option for your vacation.</div>
-                    </div>
-                    <div class="content-container">
-                        <div class="question">Do you book group travel?</div>
-                        <div class="answer">Yes, we book group travel all the time! We specialize in helping groups of all sizes plan their dream trips. From family reunions to corporate retreats, we can take care of all the details so you can relax and enjoy your time away. </div>
-                    </div>
-               </div>
-
-            </section>
+    <nav class="main-nav container align-center" aria-label="main navigation">
+        <div class="logo">
+            <a href="index.html">Sol & Äventyr</a>
         </div>
-        <footer>
-            <p class="text">© 2024 Sol & Ävenytyr. All Rights Reserved. 2005 - 2024</p>
-        </footer>
-    </div>  
+        <div class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="packages.html">Packages</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <button class="shopping-cart"><i class="fas fa-cart-plus"></i></button>
+        </div>
+    </nav>
+
+    <section class="container">
+        <div class="about-content">
+            <h1>About Us</h1>
+            <p>Sol & Äventyr AB was founded in 2005 in Stockholm and specializes in offering
+                affordable and comfortable charter trips. With destinations in Europe, Asia and
+                the Caribbean. The company focuses on creating simple and safe holiday experiences for 
+                families, couples and group.
+            </p>
+        </div>
+        <!-- <img class="image" src="images/about-us-img.jpg" alt=""> -->
+        <div class="vision-content">
+            <h3>Vision</h3>
+            <p>To become the most valued charter travel company in Scandinavia.</p>
+            <h3>Mission</h3>
+            <ul>
+                <li>Travel guarantee for security.</li>
+                <li>Customer support available around the clock.</li>
+                <li>Inspiring and affordable travel experiences.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="faq-section container">
+        
+        <h1>FAQS</h1>
+        <div class="faq-card">
+            <div class="question">
+                <h3>How do travel agents get paid, and will it cost me extra?</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="answer">
+                <p>Great question! Travel agents are typically paid by the resorts, so we don't charge a service fee for our expertise. 
+                    Many resorts follow price parity, meaning the cost is the same whether you book through us, directly with the resort, or via an online booking site.
+                </p>
+            </div>
+        </div>
+        <div class="faq-card">
+            <div class="question">
+                <h3>What booking services does your company offer?</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="answer">
+                <p>Finding the right flight online can be pretty challenging, all those airport codes, stopovers, and layovers. Let our flight specialists help you. 
+                    We have access to some very affordable prices and can book the perfect connection that best suits your trip. 
+                    Please call or live chat us and our sales team will be happy to assist with booking your flights.
+                </p>
+            </div>
+        </div>
+        <div class="faq-card">
+            <div class="question">
+                <h3>Do I nedd travel insurance?</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="answer">
+                <p>Yes. We highly recommend travel protection, it's important to protect your trip investment and loved ones. 
+                    We will offer you the best option for your vacation.
+                </p>
+            </div>
+        </div>
+        <div class="faq-card">
+            <div class="question">
+                <h3>Do you book group travel?</h3>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="answer">
+                <p>Yes, we book group travel all the time! We specialize in helping groups of all sizes plan their dream trips. 
+                    From family reunions to corporate retreats, we can take care of all the details so you can relax and enjoy your time away.
+                </p>
+            </div>
+        </div>
+    </section>
+
+</body> 
