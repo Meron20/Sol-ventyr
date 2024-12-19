@@ -126,6 +126,14 @@ const getCartItems = () => {
     return JSON.parse(window.localStorage.getItem('cartItems'))
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+     const newsletterForm = document.getElementById('newsletter-form')
+     console.log('he')
+     newsletterForm.addEventListener('submit', (event) => {
+        event.preventDefault()
+        alert('Thank you for subscribing!')
+     })
+})
 
 // const productItem2 = getProductById(2)
 // const productItem1 = getProductById(1)
