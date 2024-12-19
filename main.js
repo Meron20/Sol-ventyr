@@ -81,7 +81,7 @@ const renderList = (itemType, itemList) => {
 
         if (itemType === 'product-list') {
             const addToCartButton = document.createElement('button')
-            addToCartButton.classList.add('cart-button')
+            addToCartButton.classList.add('cart-button', 'btn')
             addToCartButton.innerHTML = 'Add to cart'
             addToCartButton.addEventListener('click', () => {
                 addToCart(getProductById(item.productId))
