@@ -128,7 +128,6 @@ const getCartItems = () => {
 
 document.addEventListener('DOMContentLoaded', () => {
      const newsletterForm = document.getElementById('newsletter-form')
-     console.log('he')
      newsletterForm.addEventListener('submit', (event) => {
         event.preventDefault()
         alert('Thank you for subscribing!')
