@@ -92,40 +92,148 @@ nav {
 }
 
 /* About Showcase */
-.about-content h1{
-    font-size: 3rem;
-    font-style: italic;
-    margin-top: 4rem;
+@media (min-width: 1024px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        position: relative;
+    }
+    
+    .about-content {
+        position: relative;
+        width: 50%;
+    }
+
+    .about-content h1{
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+    
+    .about-text {
+        margin: 40px;
+    }
+    
+    .image-content {
+        position: absolute;
+        width: 50%;
+        right: 50px;
+        bottom: 125px;
+    }
+
+    .vision-content h4{
+        font-size: 2rem;
+        margin: 15px;
+        margin-top: 2rem;
+    }
+    
+    .vision-content p {
+        margin: 40px;
+    }
+    
+    .mission-content h4 {
+        font-size: 2rem;
+        margin: 15px;
+        margin-top: 2rem; 
+    }
+
+    .mission-text ul {
+        margin: 40px;
+    }
+    
+    .mission-text span {
+        margin-left: 10px;
+    }
 }
 
-.about-text {
-    margin: 40px;
+@media (min-width: 1000px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero {
+        position: relative;
+    }
+    
+    .about-content {
+        position: relative;
+        width: 50%;
+    }
+
+    .about-content h1{
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+    
+    .about-text {
+        margin: 40px;
+    }
+    
+    .image-content {
+        position: absolute;
+        width: 50%;
+        right: 50px;
+        bottom: 105px;
+    }
+
+    .vision-content {
+        margin: 20px;
+    }
+
+    .vision-content h4{
+        font-size: 2rem;
+        margin: 15px;
+        margin-top: 2rem;
+    }
+    
+    .vision-content p {
+        margin: 10px;
+    }
+    
+    .mission-content h4 {
+        font-size: 2rem;
+        margin: 15px;
+        margin-top: 2rem; 
+    }
+
+    .mission-text ul {
+        margin: 40px;
+    }
+    
+    .mission-text span {
+        margin-left: 10px;
+    }
 }
 
-.vision-content h4{
-    font-size: 2rem;
-    margin: 15px;
-    margin-top: 2rem;
-}
+@media(max-width: 900px) {
+    .about-content h1{
+        text-align: center;
+        margin: 20px;
+    }
 
-.vision-content p {
-    margin: 40px;
-}
+    .image-content{
+        margin: 40px;
+        display: flex;
+        justify-content: center;
+    }
 
-.mission-content h4 {
-    font-size: 2rem;
-    margin: 15px;
-    margin-top: 2rem; 
+    .image-content img {
+        width: 60%;
+    }
 }
-.mission-text ul {
-    margin: 40px;
-}
-
-.mission-text span {
-    margin-left: 10px;
-}
-
-
 
 @media (max-width: 768px) {
     .container {
@@ -158,6 +266,16 @@ nav {
 
     .about-content {
         text-align: center;
+        margin: 10px;
+    }
+
+    .image-content{
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-content img {
+        width: 100%;
     }
 
     .vision-content {
@@ -166,20 +284,6 @@ nav {
 
     .mission-content {
         text-align: center;
-    }
-}
-
-
-@media (min-width: 1024px) {
-
-    body {
-        font-size: 18px;
-    }
-
-    .container{
-
-        max-width: 1200px;
-        margin: 0 auto;
     }
 }
 
@@ -202,9 +306,14 @@ nav {
     font-size: 1.5rem;
 }
 
+i {
+    transition: transform 0.5s ease-in;
+}
+
 .answer {
     max-height: 0;
     overflow: hidden;
+    transition: max-height 1.4s ease;
 }
 
 .answer p {
@@ -217,6 +326,11 @@ nav {
     max-height: 300px;
 
 }
+
+.faq-card.active i {
+    transform: rotate(180deg);
+}
+
 footer {
     text-align: center;
     padding: 1rem;
