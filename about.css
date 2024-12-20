@@ -185,7 +185,7 @@ nav {
     .image-content {
         position: absolute;
         width: 50%;
-        right: 50px;
+        right: 35px;
         bottom: -38px;
     }
 
@@ -336,7 +336,7 @@ nav {
 }
 
 .question h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 i {
@@ -367,7 +367,7 @@ i {
 footer {
     text-align: center;
     padding: 1rem;
-    margin: 2rem;
+    margin: 3rem;
     font-size: 1.5rem;
     color: gray;
 }
