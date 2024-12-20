@@ -186,7 +186,7 @@ nav {
         position: absolute;
         width: 50%;
         right: 50px;
-        bottom: 105px;
+        bottom: -38px;
     }
 
     .vision-content {
@@ -219,9 +219,29 @@ nav {
 }
 
 @media(max-width: 900px) {
+
     .about-content h1{
         text-align: center;
         margin: 20px;
+    }
+
+    .about-text {
+        padding: 20px;
+    }
+
+    .vision-content {
+        text-align: center;
+        margin: 20px;
+    }
+
+    .vision-content h4{
+        font-size: 2rem;
+        margin: 15px;
+        margin-top: 2rem;
+    }
+    
+    .vision-content p {
+        margin: 5px;
     }
 
     .image-content{
@@ -288,6 +308,19 @@ nav {
 }
 
 /* FAQ Showcase */
+.faq-content {
+    text-align: center;
+    margin: 30px;
+    padding: 60px;
+}
+
+.flex {
+    display: flex;
+}
+
+.image-faq {
+    width: 40%;
+}
 .faq-card {
     max-width: 700px;
     margin-top: 2rem;
